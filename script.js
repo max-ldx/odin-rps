@@ -14,3 +14,11 @@ function getComputerChoice() {
         return choices.scissors;
     }
 }
+
+function getHumanChoice() {
+    const input = prompt('rock, paper or scissors?').toLowerCase();
+    if (input === choices.rock || input === choices.paper || input === choices.scissors) {
+        return input;
+    }
+    return null;
+}
