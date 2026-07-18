@@ -4,6 +4,11 @@ const choices = {
     SCISSORS: "scissors"
 }
 
+const scores = {
+    humanScore = 0,
+    computerScore = 0
+}
+
 function getComputerChoice() {
     const randomNumber = Math.random();
     if (randomNumber >= 2 / 3) {
